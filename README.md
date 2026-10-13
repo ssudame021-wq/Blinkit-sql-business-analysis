@@ -44,13 +44,7 @@ This project analyses Blinkit-style quick-commerce order data from 2022 to 2026.
 2. Load the yearly CSV files into it.
 3. Run the queries one by one and compare with the screenshots in `outputs/`.
 
-Full CSV files: [add Google Drive link]
+Full CSV files: (https://drive.google.com/drive/folders/1F0Z8rIFARXc0X0P09C2uPqU89P9Y4jHl?usp=sharing)
 
-## Notes
 
-- Query 17 shows a `0000-00` cohort because some order dates loaded as `0000-00-00`. Clean or filter those before charting retention.
-- This is a dataset-based portfolio project, not official Blinkit data.
 
-## Author
-
-[Your name] | [LinkedIn link]
