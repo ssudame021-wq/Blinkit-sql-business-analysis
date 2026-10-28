@@ -31,20 +31,30 @@ This project analyses Blinkit-style quick-commerce order data from 2022 to 2026.
 | Promotions | Promo vs no promo, promo codes ranked by revenue |
 | Retention | Cohort retention, customers at risk of churn, revenue concentration |
 
-## Repository structure
 
-- `data/`: order data (yearly CSV files)
-- `sql/`: table setup and the 20 analysis queries
-- `outputs/`: query results from MySQL Workbench
-- `presentation/`: slide deck with problem, query, output and solution for each question
+## Repository Structure
 
-## How to run
+- `blinkit_orders_*.csv`: order data (yearly CSV files, stored with Git LFS)
+- `imported blinkit.sql`: table setup and the 20 analysis queries
+- `blinkit proj outputs.pdf`: query results from MySQL Workbench
+- `Blinkit_SQL_Analysis_Interactive.pptx`: slide deck with problem, query, output and solution for each question
 
-1. Create the table with the setup script in `sql/` (the table is named `blinkit`).
-2. Load the yearly CSV files into it.
-3. Run the queries one by one and compare with the screenshots in `outputs/`.
+## How to run 'Dataset,
 
-Full CSV files: (https://drive.google.com/drive/folders/1F0Z8rIFARXc0X0P09C2uPqU89P9Y4jHl?usp=sharing)
+The dataset (Blinkit orders, 2022-2026) is stored using [Git LFS](https://git-lfs.com) because the CSV files are too large for a regular GitHub repository.
 
+### How to get the data
+
+1. Install Git LFS from https://git-lfs.com (one-time setup).
+2. Run the following commands:
+
+```bash
+git lfs install
+git clone https://github.com/ssudame021-wq/Blinkit-sql-business-analysis.git
+```
+
+The CSV files will be downloaded automatically along with the code.
+
+> **Note:** If you downloaded the repo as a ZIP from GitHub, the CSV files will only be small pointer files. Use `git clone` (with Git LFS installed) to get the actual data.
 
 
